@@ -4,9 +4,26 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+
+    <HelloWorld></HelloWorld>
+
     <router-view/>
+
+  <Trombi></Trombi>
   </div>
 </template>
+
+<script type="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import HelloWorld from './components/HelloWorld.vue';
+
+@Component({
+  components: {
+    HelloWorld,
+  },
+})
+export default class App extends Vue {}
+</script>
 
 <style>
 #app {
