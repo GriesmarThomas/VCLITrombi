@@ -16,7 +16,9 @@ module.exports = {
     'class-methods-use-this':'off',
     'no-template-curly-in-string':'off',
     'prefer-template':'off',
-    'global-require':'off'
+    'global-require':'off',
+    'arrow-parens' : 'off',
+    'indent' : 'off',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',

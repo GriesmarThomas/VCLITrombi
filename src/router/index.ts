@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import HomePage from '../views/HomePage.vue';
 import TrombiPage from '../views/TrombiPage.vue';
+import LatestMovie from '../components/LatestMovie.vue';
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/trombi',
     name: 'trombi',
     component: TrombiPage,
+  },
+  {
+    path: '/movie',
+    name: 'movie',
+    component: LatestMovie,
   },
 ];
 
