@@ -10,7 +10,9 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 export default class HomePage extends Vue {
-  WelcomeMessage = 'Ceci est le texte\n de bienvenue.';
+  WelcomeMessage = 'Ceci est le texte de bienvenue, contenu dans la variable WelcomeMessage.';
+
+
   // components: {
   //   HomePage,
   // },

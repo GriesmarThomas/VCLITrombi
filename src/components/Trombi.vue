@@ -1,6 +1,6 @@
 <template>
 <div>
-    <p>{{TrombiGuy.FirstName}} {{TrombiGuy.LastName}} Coin coin</p>
+    <p>{{ FirstName }} {{ LastName }} </p>
 </div>
 </template>
 
@@ -12,17 +12,11 @@ export default class TrombiGuy extends Vue {
         @Prop()
         Id: string;
 
+        @Prop()
         FirstName: string;
 
+        @Prop()
         LastName: string;
-
-  // get myComputedName() {
-  //     return this.FirstName + ' ' + this.LastName;
-  // }
-
-  // displayName() {
-  //     return this.FirstName + ' ' + this.LastName;
-  // }
 }
 </script>
 
