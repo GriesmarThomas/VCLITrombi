@@ -34,6 +34,9 @@ export default class TrombiGuy extends Vue {
         @Prop()
         Motto: string;
 
+        @Prop()
+        Category: number;
+
         get GetPicturePath() {
           return '/assets/trombiThumbs/' + this.PicturePath;
         }

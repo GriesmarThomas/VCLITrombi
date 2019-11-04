@@ -1,5 +1,5 @@
 module.exports = {
-  devServer: {
-    proxy: 'http://backend.test/',
-  }
+  // devServer: {
+  //   proxy: 'http://backend.test/',
+  // }
 };
