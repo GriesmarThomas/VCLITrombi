@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import HomePage from '../views/HomePage.vue';
 import TrombiPage from '../views/TrombiPage.vue';
 import LatestMovie from '../components/LatestMovie.vue';
+import SearchPage from '../views/SearchPage.vue';
 
 Vue.use(VueRouter);
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/movie',
     name: 'movie',
     component: LatestMovie,
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: SearchPage,
   },
 ];
 

@@ -83,10 +83,6 @@ export default class TrombiPage extends Vue {
 onCategoryChange(val:string) {
   this.trombiGuys = this.initialTrombiGuys.filter(trombi => trombi.Category.toString() === val);
 }
-// onCategoryChange {
-//   this.trombiGuys = this.trombiGuys.filter(trombi => trombi.Category === event.target.value);
-// }
-
 
   getTrombiguysFromAPI() {
 axios.defaults.headers.common = {
@@ -101,7 +97,7 @@ axios.defaults.headers.common = {
         this.trombiGuysAPI = response.data.Search;
         })
         .catch(error => {
-        console.log(error);
+
         });
   }
 }
